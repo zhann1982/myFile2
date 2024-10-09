@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элементы формы</title>
+</head>
+<body>
+
+    <!-- Ниже представлена форма для регистрации пользователей -->
+    <!-- тэг <form> содержит важные атрибуты которые будут использоваться во взаимодействии с сервером через Javascript файл -->
+    <form action="/submit" method="post"></form>
+        <!-- тэг <fieldset> в данном примере группирует все элементы формы и оборачивает их в рамку -->
+        <fieldset> 
+
+            <!-- тэг <legend> задает информативное название для нашей формы -->
+            <legend> User Registration </legend> <br>
+
+            <!-- тэг <label> связывает текст с полем ввода. Сам текст дает понять пользователю какие данные нужно вводить. 
+                В данном случае текст "Name:" связывается с полем ввода текста input type="text" который расположен ниже самой связки 
+                Свзяка текста и поля ввода осуществляется через аттрибуты "for" и "name" -->
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <br><br>
+
+            <!-- Ниже расположены поля ввода для эл.почты, пароля, текста и страны. У каждого поля есть своя связка с соответствующим текстом -->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required> <br><br>
+
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" cols="30" rows="6"></textarea> <br><br>
+
+            
+
+            <label for="country">Country</label>
+
+            <!-- тэг <select> дает возможность выбора для пользователя. Список для выбора задается через тэги option -->
+            <select name="country" id="country" required >
+                <option value="" disabled selected hidden>Choose your country</option>
+                <option value="kz">Казахстан</option>
+                <option value="ru">Россия</option>
+                <option value="kg">Кыргызстан</option>
+                <option value="uz">Узбекистан</option>
+                <option value="tm">Туркменистан</option>
+            </select>
+
+            <!-- после выбора пользователя, на сервер передается значение из аттрибута "value" -->
+
+            <br><br>
+
+            <!-- кнопка типа submit подтверждает введеные данные в полях и передает их далее на серверную часть -->
+            <button type="submit">Submit</button>
+
+            <!-- кнопка типа reset сбрасывает все введеные значения в полях ввода на начальные пустые значения -->
+            <button type="reset">Reset</button>
+            
+            <!-- Но на данный момент нажатие на кнопки не дает никакого эффекта, так как у нас еще нет серверной части кода -->
+        </fieldset>
+    </form>
+    <br>
+
+
+</body>
+</html>
