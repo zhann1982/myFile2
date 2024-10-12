@@ -1,0 +1,119 @@
+
+/* Меняем цвет всех заголовков в документе */
+h1, h2, h3 {
+    color: darkcyan;
+}
+
+/* Задаем разные размеры шрифтов для первых шести абзацев */
+p.text-1 {
+    font-size: 12px;
+}
+p.text-2 {
+    font-size: 14px;
+}
+p.text-3 {
+    font-size: 16px;
+}
+p.text-4 {
+    font-size: 18px;
+
+    /* Задаем жирный шрифт одному из абзацев */
+    font-weight: bold;
+}
+p.text-5 {
+    font-size: 20px;
+}
+p.text-6 {
+    font-size: 22px;
+}
+
+/* Распологаем по центру один из заголовков */
+#secondaryHeader-3 {
+    text-align: center;
+}
+
+/* Меня цвет фона первого div элемента */
+.container-1 {
+    background-color: greenyellow;
+}
+
+/* Вставляем фоновый рисунок для второго div элемента */
+.container-2 {
+    background-image: url(https://picsum.photos/id/222/200/300);
+}
+
+/* Меняем внутренние и внешние отступы, и задаем границы для следующих трех div элементов */
+/* для наглядности меняем фоновые цвета блоков*/
+
+.container-3 {
+    margin: 10px;  /* Задаем внешний отступ */
+    padding: 15px;   /* Задаем внутренний отступ */
+    border: 1px solid black;   /* Задаем видимую границу блока */
+
+    background-color: pink;
+}
+
+.container-4 {
+    margin: 30px;
+    padding: 10px;
+    border: 5px dotted lightgreen;
+
+    background-color: brown;
+}
+
+.container-5 {
+    margin: 10px;
+    padding: 50px;
+    border: 3px dashed magenta;
+
+ /* У одного из блоков задаем округлые углы */
+    border-radius: 15px;
+
+    background-color: lightsalmon;
+}
+
+.container-6 {
+    margin: 60px;
+    padding: 35px;
+    border: 4px solid lightskyblue;
+
+    background-color: lightsalmon;
+}
+
+/* Последним четырем блокам div задаем разные фиксированные размеры */
+/* Для управления содержимым используем свойство "overflow" */
+.container-7 {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;  /* В данном блоке текст выходящий за границы блока будет скрыт */
+
+    border: 1px solid gray;
+}
+
+.container-8 {
+    width: 300px;
+    height: 100px;
+    overflow: scroll;  /* В данном блоке текст выходящий за границы блока будет доступен через прокрутку */
+                       /* элементы прокрутки будут отображаться даже если в нем нет надобности*/  
+
+    border: 1px solid gray;
+}
+
+.container-9 {
+    width: 350px;
+    height: 180px;
+    overflow: auto;  /* В данном блоке текст выходящий за границы блока будет доступен через прокрутку */
+                     /* элементы прокрутки будут отображаться только по мере надобности*/  
+                     /* То есть если содержимое блока не выходит за рамки границ, то элементы прокрутки не отображаются */
+
+    border: 1px solid gray;
+}
+
+.container-10 {
+    width: 250px;
+    height: 200px;
+    overflow: visible; /* В данном блоке текст выходящий за границы блока будет виден даже если он не помещается в блоке. Он как бы вываливается на ружу */ 
+                       /* Это значение по умолчанию для свойтства "overflow" */
+
+    border: 1px solid gray;
+}
