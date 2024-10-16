@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style15.css">
+
+    <title>Линейные и блочные элементы</title>
+</head>
+<body>
+
+    <!-- Заголовки h1, h2, h3, h4, h5, h6 являются блочными  элементами по умолчанию -->
+    <h1 class="block-to-inline">Линейные и блочные элементы</h1>
+
+    <!-- Абзацы, то есть тэги 'p', являются блочными  элементами по умолчанию -->
+    <p class="block-to-inline">Это короткий абзац</p>
+    <p class="block-to-inline">Это еще один короткий абзац</p>
+   
+    <!-- Картинки (тэг 'img') являются строчными  элементами по умолчанию-->
+    <img class="inline-to-block" src="./colorful1.jpg" alt="Красочная картинка 1" width="150px">
+    <img class="inline-to-block" src="./colorful2.jpg" alt="Красочная картинка 2" width="150px">
+    <img class="inline-to-block" src="./colorful3.jpg" alt="Красочная картинка 3" width="150px">
+
+    <!-- контейнеры, то есть тэги 'div', являются блочными элементами по умолчанию -->
+    <div class="block-to-inline gray">
+        Это серый контейнер 1
+    </div>
+    <div class="block-to-inline gray">
+        Это серый контейнер 2
+    </div>
+
+    <!-- Создаем блочный контейнер с вложенными элементами  -->
+    <div class="container">
+        <p>Короткий абзац.</p>
+        <a href="https://google.kz">Google</a> <a href="https://nur.kz">Nur.kz</a>
+        <img class="inline-to-block" src="./colorful2.jpg" alt="Красочная картинка 2" width="100px">
+        <img class="inline-to-block" src="./colorful3.jpg" alt="Красочная картинка 3" width="100px">
+    </div>
+
+</body>
+</html>
