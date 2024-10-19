@@ -123,7 +123,7 @@ div.list3 > p:nth-child(4) {
 
 /* При выделении курсором мыши (или через кнопку Tab) выделяем последний элемент в любом блоке 
 нашей мнимой страницы. Но это недействует на наши абзацы, так как они не выделяются*/
-.web-block div :last-child:focus {
+.web-block > div > :last-child:focus {
     background-color: #3f34db;
     color: rgba(255, 234, 234, 0.8);
 }
