@@ -1,3 +1,4 @@
+/* Задание 1 --------------------*/
 
 /* Кнопка будет менять цвет при наведении мышкой на нее */
 #submit-button:hover {
@@ -13,6 +14,8 @@
 }
 
 
+/* Задание 2 --------------------*/
+
 /* Меняем стиль первого и последнего элемента в маркированном списке */
 li:first-child {
     color: #b40000;
@@ -24,6 +27,8 @@ li:last-child {
     font-weight: bold;
 }
 
+
+/* Задание 3 --------------------*/
 
 /* В контейнерах со ссылками, сами ссылки будут менять цвет на зеленый при наведении курсором мыши */
 .link-list  a:hover {
@@ -37,22 +42,38 @@ li:last-child {
     font-weight: bold;
 }
 
-div.link-list > p:nth-child(odd) {
+/* Все нечетные абзацы в первом списке со ссылками будут менять цвет фона на голубоватый */
+div.list1 > p:nth-child(odd) {
     background-color: #67dcff;
 }
 
+/* Все четные абзацы во втором списке со ссылками будут менять цвет фона на желтый */
+div.list2 > p:nth-child(even) {
+    background-color: #fdeb43;
+}
 
+/* Четвертый абзац в третьем списке со ссылками будет менять цвет фона на розовый */
+div.list3 > p:nth-child(4) {
+    background-color: #ff8be2;
+}
+
+
+/* Задание 4 --------------------*/
+
+/* Создаем отдельный блок для имитации страницы сайт */
 .web-block {
     max-width: 800px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;  /* Центрируем содержимое страницы */
     background-color: #fafefa;
 }
 
+/* Выделяем стилями три основных блока страницы */
 .header-block {
     background-color: #caffe9;
     padding: 10px;
 }
+
 
 .main-block {
     padding: 10px;
@@ -63,7 +84,10 @@ div.link-list > p:nth-child(odd) {
     padding: 10px;
 }
 
+
+/* Создаем карточки ввиде ссылок на страницы на сайте Codepen */
 .main-block a {
+
     display: block;
 
     text-decoration: none;
@@ -75,13 +99,33 @@ div.link-list > p:nth-child(odd) {
     padding: 10px;
 }
 
+/* Создаем красивые ссылки на соц.сети */
 .footer-block a {
 
     text-decoration: none;
     color: #000;
 
-    border: 1px solid #cfcfcf;
+    border: 1px solid #04d9ff;
     border-radius: 15px;
+    background-color: #ccfffb;
+
     margin: 15px;
     padding: 3px 15px;
 }
+
+/* При наведении курсором мыши выделяем первый элемент в любом блоке нашей мнимой страницы */
+/* Здесь перед двоеточием нет названия тэга, а это значит что будет использован любой элемент который
+стоит первым в блоке */
+.web-block div :first-child:hover {
+    background-color: #a00000;
+    color: rgba(255,255,255,0.8);
+}
+
+/* При выделении курсором мыши (или через кнопку Tab) выделяем последний элемент в любом блоке 
+нашей мнимой страницы. Но это недействует на наши абзацы, так как они не выделяются*/
+.web-block div :last-child:focus {
+    background-color: #3f34db;
+    color: rgba(255, 234, 234, 0.8);
+}
+
+/* Кстати, чтобы увидет эффекты при выделении элемента можно также использовать правую кнопку мыши */
