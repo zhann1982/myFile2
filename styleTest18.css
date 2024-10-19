@@ -1,0 +1,96 @@
+body {
+    height: 3000px;
+}
+
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 100px;
+
+    background-color: lightsalmon;
+    width: 500px;
+    height: 700px;
+}
+
+.absolute {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+
+    background-color: lightskyblue;
+    width: 300px;
+    height: 100px;
+}
+
+.fixed {
+    position: fixed;
+    top: 200px;
+    left: 400px;
+
+    background-color: rgba(255,0,0, 0.5);
+    padding: 10px 50px;
+}
+
+.sticky {
+    position: sticky;
+    top: 400px;
+    padding: 5px;
+    background-color: lightgreen;
+}
+
+.has-floating-img-1 {
+    background-color: #c9fcf5;
+    padding: 10px;
+    margin: 5px auto ;
+
+    text-align: justify;
+
+    width: 500px;
+}
+
+.float-1 {
+    float: left;
+
+    width: 120px;
+    margin: 0 5px;
+}
+
+.has-floating-img-2 {
+    background-color: #ffd8fd;
+    padding: 10px;
+    margin: 5px auto ;
+
+    text-align: justify;
+
+    width: 500px;
+}
+
+.float-2 {
+    float: right;
+
+    width: 120px;
+    margin: 0 5px;
+}
+
+.has-floating-div {
+    background-color: #e6ffab;
+    padding: 10px;
+    margin: 5px auto ;
+
+    text-align: justify;
+
+    width: 500px;
+}
+
+.floating-div {
+    display: inline;
+
+    float: right;
+
+    width: 100px;
+    height: 100px;
+    background-color: #b8c3ff;
+    margin: 5px;
+    padding: 5px;
+}

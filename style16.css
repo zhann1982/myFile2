@@ -1,0 +1,87 @@
+
+/* Кнопка будет менять цвет при наведении мышкой на нее */
+#submit-button:hover {
+    background-color: #00e498;
+}
+
+/* Когда поле ввода становиться активным, ее границы меняют цвет на красный.
+Поле ввода становиться активным если пользователь встает в это поле выделяя ее мышкой. Или переходит
+в это поле при нажатии кнопки Tab на клавиатуре. */
+#name-input:focus {
+    outline: none;   /* Здесь мы удаляем предустановленные границы поля, чтобы они не мешали */
+    border: 2px solid #cf1515;
+}
+
+
+/* Меняем стиль первого и последнего элемента в маркированном списке */
+li:first-child {
+    color: #b40000;
+    font-family: arial;
+}
+
+li:last-child {
+    color: #1060d8;
+    font-weight: bold;
+}
+
+
+/* В контейнерах со ссылками, сами ссылки будут менять цвет на зеленый при наведении курсором мыши */
+.link-list  a:hover {
+    color: #36b802;
+}
+
+/* Попробуйте нажать несколько раз кнопку Tab на странице, вы заметите что по очереди выделяются ссылки.
+Выделенные или активные ссылки меняют цвет заливки на оранжевато-красный, а текст ссылки станет жирным*/
+.link-list  a:focus {
+    background-color: #faa984;
+    font-weight: bold;
+}
+
+div.link-list > p:nth-child(odd) {
+    background-color: #67dcff;
+}
+
+
+.web-block {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fafefa;
+}
+
+.header-block {
+    background-color: #caffe9;
+    padding: 10px;
+}
+
+.main-block {
+    padding: 10px;
+}
+
+.footer-block {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.main-block a {
+    display: block;
+
+    text-decoration: none;
+    color: #000;
+
+    border: 1px solid #cfcfcf;
+
+    margin: 5px;
+    padding: 10px;
+}
+
+.footer-block a {
+
+    text-decoration: none;
+    color: #000;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 3px 15px;
+}
